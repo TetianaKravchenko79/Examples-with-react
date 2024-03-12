@@ -1,0 +1,110 @@
+.MyModal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+  min-height: 250px;
+  width: 74.5%;
+  min-width: 300px;
+  text-align: center;
+  padding: 10px;
+}
+
+.openModalBtn {
+  position: absolute;
+  width: 30%;
+  left: 34%;
+  background: #f2f6f0;
+  padding: 18px 5px;
+  border-radius: 20px;
+  font-weight: 15%;
+  border: 0;
+  outline: none;
+  /* font-size: 22px; */
+  cursor: pointer;
+  /* line-height: 23px; */
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+  transition: all 0.2s ease-in-out;
+}
+.openModalBtn:hover {
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}
+
+.openModalBtn:active {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  transform: translateY(0);
+}
+.closeBtn {
+  background: hsl(0, 100%, 100%);
+  border-radius: 10px;
+  cursor: pointer;
+  position: absolute;
+  left: 80%;
+  top: 3%;
+  padding: 0;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+  transition: all 0.1s ease-in-out;
+}
+.closeBtn:hover {
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}
+
+.closeBtn:active {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  transform: translateY(0);
+}
+.overlay {
+  position: relative;
+  left: 16%;
+  width: 95%;
+  height: 90%;
+
+  background-color: rgba(204, 253, 8, 4);
+  border: 3px solid rgb(10, 113, 88);
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.modal {
+  background-color: #09021528;
+  width: 70%;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 40px 28px;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease-in-out;
+}
+.ModalImg {
+  border-radius: 5px;
+  width: 100%;
+}
+.modal:hover {
+  opacity: 1;
+}
+.overlay.animated {
+  opacity: 1;
+  visibility: hidden;
+}
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-50%, -30%);
+  transition-delay: 0.2s;
+}
+
+.show {
+  opacity: 0;
+  visibility: visible;
+}
+.modal {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%);
+}
